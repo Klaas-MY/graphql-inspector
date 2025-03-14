@@ -125,6 +125,7 @@ export async function run() {
     schemaPath = schemaPointer;
   }
 
+  
   const isNewSchemaUrl = endpoint && schemaPath.startsWith('http');
 
   const [oldFile, newFile] = await Promise.all([
